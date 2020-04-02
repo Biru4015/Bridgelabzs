@@ -1,0 +1,13 @@
+C:\Users\Birendra Kumar\source\repos\Functionals\Functionals\bin\Debug\netcoreapp3.1\Functionals.exe
+C:\Users\Birendra Kumar\source\repos\Functionals\Functionals\bin\Debug\netcoreapp3.1\Functionals.deps.json
+C:\Users\Birendra Kumar\source\repos\Functionals\Functionals\bin\Debug\netcoreapp3.1\Functionals.runtimeconfig.json
+C:\Users\Birendra Kumar\source\repos\Functionals\Functionals\bin\Debug\netcoreapp3.1\Functionals.runtimeconfig.dev.json
+C:\Users\Birendra Kumar\source\repos\Functionals\Functionals\bin\Debug\netcoreapp3.1\Functionals.dll
+C:\Users\Birendra Kumar\source\repos\Functionals\Functionals\bin\Debug\netcoreapp3.1\Functionals.pdb
+C:\Users\Birendra Kumar\source\repos\Functionals\Functionals\obj\Debug\netcoreapp3.1\Functionals.csprojAssemblyReference.cache
+C:\Users\Birendra Kumar\source\repos\Functionals\Functionals\obj\Debug\netcoreapp3.1\Functionals.csproj.CoreCompileInputs.cache
+C:\Users\Birendra Kumar\source\repos\Functionals\Functionals\obj\Debug\netcoreapp3.1\Functionals.AssemblyInfoInputs.cache
+C:\Users\Birendra Kumar\source\repos\Functionals\Functionals\obj\Debug\netcoreapp3.1\Functionals.AssemblyInfo.cs
+C:\Users\Birendra Kumar\source\repos\Functionals\Functionals\obj\Debug\netcoreapp3.1\Functionals.dll
+C:\Users\Birendra Kumar\source\repos\Functionals\Functionals\obj\Debug\netcoreapp3.1\Functionals.pdb
+C:\Users\Birendra Kumar\source\repos\Functionals\Functionals\obj\Debug\netcoreapp3.1\Functionals.genruntimeconfig.cache
