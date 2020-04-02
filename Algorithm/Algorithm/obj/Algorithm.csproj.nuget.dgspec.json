@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Birendra Kumar\\Desktop\\csharp\\Algorithm\\Algorithm\\Algorithm.csproj": {}
+    "C:\\Users\\Birendra Kumar\\source\\repos\\Algorithm\\Algorithm\\Algorithm.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Birendra Kumar\\Desktop\\csharp\\Algorithm\\Algorithm\\Algorithm.csproj": {
+    "C:\\Users\\Birendra Kumar\\source\\repos\\Algorithm\\Algorithm\\Algorithm.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Birendra Kumar\\Desktop\\csharp\\Algorithm\\Algorithm\\Algorithm.csproj",
+        "projectUniqueName": "C:\\Users\\Birendra Kumar\\source\\repos\\Algorithm\\Algorithm\\Algorithm.csproj",
         "projectName": "Algorithm",
-        "projectPath": "C:\\Users\\Birendra Kumar\\Desktop\\csharp\\Algorithm\\Algorithm\\Algorithm.csproj",
+        "projectPath": "C:\\Users\\Birendra Kumar\\source\\repos\\Algorithm\\Algorithm\\Algorithm.csproj",
         "packagesPath": "C:\\Users\\Birendra Kumar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Birendra Kumar\\Desktop\\csharp\\Algorithm\\Algorithm\\obj\\",
+        "outputPath": "C:\\Users\\Birendra Kumar\\source\\repos\\Algorithm\\Algorithm\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Birendra Kumar\\AppData\\Roaming\\NuGet\\NuGet.Config",

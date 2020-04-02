@@ -16,6 +16,11 @@ namespace Algorithm
             Console.WriteLine("Press 8 For Finding all the permutation of a given string.");
             Console.WriteLine("Press 9 For Simulation of binary search.");
             Console.WriteLine("Press 10 For Simulation of Bubble sort for given integer array.");
+            Console.WriteLine("Press 11 For Simulation of insertion sort of given array.");
+            Console.WriteLine("Press 12 For Finding all prime numners between given range");
+            Console.WriteLine("Press 13 For Two String is anagram or not.");
+            Console.WriteLine("Press 14 For Simulation of merge sort of given word list");
+            Console.WriteLine("Press 15 For Finding the prime in range and also check palindrome and anagram.");
 
             Console.Write("Please enter your options and enter: ");
             int option = Convert.ToInt32(Console.ReadLine());
@@ -82,6 +87,37 @@ namespace Algorithm
                 //Simulation of Bubble sort for given inetegr array
                 BubbleSort sort = new BubbleSort();
                 sort.bubbleSort();
+                break;
+
+                case 11:
+                //Simulation of Insertion sort of given array
+                InsertionSort insertion = new InsertionSort();
+                insertion.insertionSort();
+                break;
+
+
+                case 12:
+                //Finding all the prime numbers betwen the range
+                PrimeNumber prime = new PrimeNumber();
+                prime.primeNumber();
+                break;
+
+                case 13:
+                //Two strings are anagram to each other or not
+                Anagram ana = new Anagram();
+                ana.anagram();
+                break;
+
+                case 14:
+                //Simulation of merge sort of given word list
+                MergeSort merge = new MergeSort();
+                merge.mergeSortMain();
+                break;
+
+                case 15:
+                //Finding the prime in range and also check palindrome and anagram.
+                PrimePalindromeAnagram primepalindrome = new PrimePalindromeAnagram();
+                primepalindrome.primePalindromeAnagram();
                 break;
 
                 default:
