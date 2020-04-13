@@ -17,6 +17,7 @@ namespace UserRegistration
             UserDetails details = new UserDetails();
             details.FirstNameMethod();
             details.LastNameMethod();
+            details.EmailMethod();
         }
     }
 }
