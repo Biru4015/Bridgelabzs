@@ -48,5 +48,19 @@ namespace UserRegistrationTest
             else
                 return false;
         }
+
+        /// <summary>
+        /// This method cantains the code of validating user mobile number
+        /// </summary>
+        /// <param name="fname"></param>
+        /// <returns>true|false</returns>
+        public bool MobileMethod(String mobileno)
+        {
+            Regex mobile = new Regex(@"^[0-9]{2}[ ][0-9]{10}$");
+            if (mobile.IsMatch(mobileno))
+                return true;
+            else
+                return false;
+        }
     }
 }

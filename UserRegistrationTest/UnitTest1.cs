@@ -83,5 +83,36 @@ namespace UserRegistrationTest
             Assert.IsTrue(email.EmailMethod("abc@yahoo.com"));
         }
 
+        //-----------------------Test for mobile number---------------------------------------
+        /// <summary>
+        /// This mthod is for wrong input testing
+        /// </summary>
+        [Test]
+        public void MobileMethodTest_WorngInput_ReturnsFalse()
+        {
+            UserDetailsTest mobile = new UserDetailsTest();
+            Assert.IsFalse(mobile.MobileMethod("6234748761"));
+        }
+
+        /// <summary>
+        /// This method is checking for right input checking
+        /// </summary>
+        [Test]
+        public void MobileMethodTest_RightInput_ReturnsTrue()
+        {
+            UserDetailsTest mobile = new UserDetailsTest();
+            Assert.IsTrue(mobile.MobileMethod("91 7735452322"));
+        }
+
+        /// <summary>
+        /// This method is checking for right input checking
+        /// </summary>
+        [Test]
+        public void MobileMethodTest_RightInput1_ReturnsTrue()
+        {
+            UserDetailsTest mobile = new UserDetailsTest();
+            Assert.IsTrue(mobile.MobileMethod("91 7735452322"));
+        }
+
     }
 }
