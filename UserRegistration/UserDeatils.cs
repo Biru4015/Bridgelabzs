@@ -44,9 +44,23 @@ namespace UserRegistration
         public void EmailMethod()
         {
             Console.Write("Enter your last emailid: ");
-            String fname = Console.ReadLine();
+            String emailid = Console.ReadLine();
             Regex email= new Regex(@"^([a-z]+)(\.[a-z0-9_\+\-]+)?@([a-z]+)\.([a-z]{2,4})(\.[a-z]{2})?$");
-            if (email.IsMatch(fname))
+            if (email.IsMatch(emailid))
+                Console.WriteLine("True");
+            else
+                Console.WriteLine("False");
+        }
+
+        /// <summary>
+        /// Purpose of this method is creating for validate various mobile format
+        /// </summary>
+        public void MobileMethod()
+        {
+            Console.Write("Enter your mobile number: ");
+            String mobileno = Console.ReadLine();
+            Regex mobile= new Regex(@"^[0-9]{2}[ ][0-9]{10}$");
+            if (mobile.IsMatch(mobileno))
                 Console.WriteLine("True");
             else
                 Console.WriteLine("False");
