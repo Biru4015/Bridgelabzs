@@ -38,8 +38,8 @@ namespace UserRegistrationTest
         [Test]
         public void LastNmaeTest_WorngInput_ReturnsFalse()
         {
-            UserDetailsTest first = new UserDetailsTest();
-            Assert.IsFalse(first.FirstNameMethod("singh"));
+            UserDetailsTest last = new UserDetailsTest();
+            Assert.IsFalse(last.LastNameMethod("singh"));
         }
 
         /// <summary>
@@ -48,8 +48,39 @@ namespace UserRegistrationTest
         [Test]
         public void LastNameTest_RightInput_ReturnsTrue()
         {
-            UserDetailsTest first = new UserDetailsTest();
-            Assert.IsTrue(first.FirstNameMethod("Singh"));
+            UserDetailsTest last= new UserDetailsTest();
+            Assert.IsTrue(last.LastNameMethod("Singh"));
+        }
+
+        //-----------------------Test for emailid---------------------------------------
+        /// <summary>
+        /// This mthod is for wrong input testing
+        /// </summary>
+        [Test]
+        public void EmailMethodTest_WorngInput_ReturnsFalse()
+        {
+            UserDetailsTest email= new UserDetailsTest();
+            Assert.IsFalse(email.EmailMethod("abc12.xyz.co.in"));
+        }
+
+        /// <summary>
+        /// This method is checking for right input checking
+        /// </summary>
+        [Test]
+        public void EmailMethodTest_RightInput_ReturnsTrue()
+        {
+            UserDetailsTest email= new UserDetailsTest();
+            Assert.IsTrue(email.EmailMethod("abc.xyz@bridgelabz.co.in"));
+        }
+
+        /// <summary>
+        /// This method is checking for right input checking
+        /// </summary>
+        [Test]
+        public void EmailMethodTest_RightInput1_ReturnsTrue()
+        {
+            UserDetailsTest email = new UserDetailsTest();
+            Assert.IsTrue(email.EmailMethod("abc@yahoo.com"));
         }
 
     }
