@@ -114,5 +114,46 @@ namespace UserRegistrationTest
             Assert.IsTrue(mobile.MobileMethod("91 7735452322"));
         }
 
+        //-----------------------Test for valid password---------------------------------------
+        /// <summary>
+        /// This mthod is for wrong input testing
+        /// </summary>
+        [Test]
+        public void PasswordMethodTest_WorngInput_ReturnsFalse()
+        {
+            UserDetailsTest password = new UserDetailsTest();
+            Assert.IsFalse(password.PasswordMethod("soham@345"));
+        }
+
+        /// <summary>
+        /// This mthod is for wrong input testing
+        /// </summary>
+        [Test]
+        public void PasswordMethodTest_WorngInput1_ReturnsFalse()
+        {
+            UserDetailsTest password = new UserDetailsTest();
+            Assert.IsFalse(password.PasswordMethod("soham345"));
+        }
+
+        /// <summary>
+        /// This method is checking for right input checking
+        /// </summary>
+        [Test]
+        public void PasswordMethodTest_RightInput_ReturnsTrue()
+        {
+            UserDetailsTest password = new UserDetailsTest();
+            Assert.IsTrue(password.PasswordMethod("Binay123"));
+        }
+
+        /// <summary>
+        /// This method is checking for right input checking
+        /// </summary>
+        [Test]
+        public void PasswordMethodTest_RightInput1_ReturnsTrue()
+        {
+            UserDetailsTest password = new UserDetailsTest();
+            Assert.IsTrue(password.PasswordMethod("ramKr123"));
+        }
+
     }
 }

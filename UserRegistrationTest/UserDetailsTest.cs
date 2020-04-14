@@ -62,5 +62,19 @@ namespace UserRegistrationTest
             else
                 return false;
         }
+
+        /// <summary>
+        /// This method cantains the code of validating password format
+        /// </summary>
+        /// <param name="fname"></param>
+        /// <returns>true|false</returns>
+        public bool PasswordMethod(String pass)
+        {
+            Regex password= new Regex(@"^(?=.*?[A-Z]+)(?=.*?[0-9]+)([A-Za-z0-9]){8,}$");
+            if (password.IsMatch(pass))
+                return true;
+            else
+                return false;
+        }
     }
 }
