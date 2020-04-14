@@ -65,5 +65,19 @@ namespace UserRegistration
             else
                 Console.WriteLine("False");
         }
+
+        /// <summary>
+        /// Purpose of this method is creating for validate various valid password format
+        /// </summary>
+        public void PasswordMethod()
+        {
+            Console.Write("Enter your valid password: ");
+            String pass = Console.ReadLine();
+            Regex password = new Regex(@"^(?=.*?[A-Z]+)(?=.*?[0-9]+)([A-Za-z0-9]){8,}$");
+            if (password.IsMatch(pass))
+                Console.WriteLine("True");
+            else
+                Console.WriteLine("False");
+        }
     }
 }

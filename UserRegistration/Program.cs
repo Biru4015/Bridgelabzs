@@ -19,6 +19,7 @@ namespace UserRegistration
             details.LastNameMethod();
             details.EmailMethod();
             details.MobileMethod();
+            details.PasswordMethod();
         }
     }
 }
