@@ -142,7 +142,7 @@ namespace UserRegistrationTest
         public void PasswordMethodTest_RightInput_ReturnsTrue()
         {
             UserDetailsTest password = new UserDetailsTest();
-            Assert.IsTrue(password.PasswordMethod("Binay123"));
+            Assert.IsTrue(password.PasswordMethod("Binay@998"));
         }
 
         /// <summary>
@@ -152,7 +152,7 @@ namespace UserRegistrationTest
         public void PasswordMethodTest_RightInput1_ReturnsTrue()
         {
             UserDetailsTest password = new UserDetailsTest();
-            Assert.IsTrue(password.PasswordMethod("ramKr123"));
+            Assert.IsTrue(password.PasswordMethod("ramKr@123"));
         }
 
     }

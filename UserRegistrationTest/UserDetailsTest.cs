@@ -70,7 +70,7 @@ namespace UserRegistrationTest
         /// <returns>true|false</returns>
         public bool PasswordMethod(String pass)
         {
-            Regex password= new Regex(@"^(?=.*?[A-Z]+)(?=.*?[0-9]+)([A-Za-z0-9]){8,}$");
+            Regex password= new Regex(@"^.*(?=.{8,})(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!*#@&^$+=]).*$");
             if (password.IsMatch(pass))
                 return true;
             else
