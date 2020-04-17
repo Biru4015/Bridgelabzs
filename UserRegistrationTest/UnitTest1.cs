@@ -10,6 +10,7 @@ namespace UserRegistrationTest
     /// </summary>
     public class FirstNameTest
     {
+        UserDetailsTest myobj = new UserDetailsTest();
         //--------------------------Test for first name------------------------------
         /// <summary>
         /// This mthod is for wrong input testing
@@ -154,6 +155,28 @@ namespace UserRegistrationTest
             UserDetailsTest password = new UserDetailsTest();
             Assert.IsTrue(password.PasswordMethod("ramKr@123"));
         }
+        
+        //-----------------------------Testing groups of emails at a time--------------------------------------
+        /// <summary>
+        /// This method is checking for multiple gmail in parameters
+        /// </summary>
+        [TestCase("abc@yahoo.com",true)]
+        [TestCase("abc.100@yahoo.com", true)]
+        [TestCase("abc", false)]
+        [TestCase("abc@.com", false)]
+        [TestCase("abc123@.com.com", false)]
+        [TestCase("abc@gmail.com.aa.au",false)]
+        [TestCase("abc@gmail.com",true)]
+        [TestCase("abc.100@abc.com.au",true)]
+        [TestCase("..abc@abc.com",false)]
+        [TestCase("abc.@gmail.com", false)]
+        [TestCase("abc@gmail.com.1a", false)]
+        [TestCase("abc..2002@gmail.com", false)]
 
+        public void EmailslMethodTest_RightInput_ReturnsTrueFalse(String emailid,bool exceptedvalue)
+        {
+            UserDetailsTest myobj = new UserDetailsTest();
+            Assert.AreEqual(exceptedvalue,myobj.EmailsMethod(emailid));
+        }
     }
 }
